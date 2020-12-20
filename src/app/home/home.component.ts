@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import * as p5 from 'p5';
 
 // declare var p5: any;
@@ -8,7 +8,7 @@ import * as p5 from 'p5';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
   private p5;
 
   constructor() {}
@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
     let speed;
     p.setup = () => {
       p.createCanvas(window.innerWidth, window.innerHeight-5).parent('home');
-      for (var i = 0; i < 500; i++) {
+      for (var i = 0; i < 200; i++) {
         stars[i] = new Star();
       }
     };
@@ -74,5 +74,9 @@ export class HomeComponent implements OnInit {
         p.line(px, py, sx, sy);
       };
     }
-  };
+  }
+
+  ngOnDestroy() {
+    document.getElementById('home')?.remove();
+  }
 }
