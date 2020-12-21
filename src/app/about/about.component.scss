@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    .title {
+      color: #fff;
+      font-size: 160px;
+
+      .highlight {
+        color: var(--text-highlight);
+      }
+    }
+
+    .icon {
+      margin-right: var(--spacing-07);
+      color: var(--text-highlight);
+    }
+  }
+}
