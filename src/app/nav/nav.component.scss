@@ -1,0 +1,15 @@
+nav {
+  position: fixed;
+  z-index: 9;
+  top: 40px;
+  left: 100px;
+  color: #fff;
+
+  .icon {
+    cursor: pointer;
+    transition: 0.5s ease;
+    &:hover {
+      color: red;
+    }
+  }
+}

@@ -14,10 +14,6 @@
     .title {
       color: var(--text-color);
       font-size: var(--font-size-10);
-
-      .highlight {
-        color: var(--text-highlight);
-      }
     }
 
     .icon {
@@ -32,24 +28,30 @@
     margin: 0 auto;
     min-height: 100vh;
 
+    .sections {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      .work {
+        flex: 1 0 0;
+      }
+    }
+
     .sub-title {
       font-size: var(--font-size-04);
       margin-bottom: var(--spacing-07);
       font-weight: normal;
-      .highlight {
-        color: var(--text-highlight);
-      }
     }
     .heading {
       font-size: var(--font-size-02);
-      margin: var(--spacing-07) 0;
+      margin: var(--spacing-07) 0 var(--spacing-02);
       opacity: 0.9;
       line-height: 2;
       font-weight: normal;
     }
     .content {
       line-height: 2;
-      margin: var(--spacing-06) 0;
+      margin: var(--spacing-02) 0;
       font-size: var(--font-size-01-4);
       opacity: 0.8;
       font-weight: normal;
@@ -58,5 +60,9 @@
         text-decoration: none;
       }
     }
+  }
+
+  .highlight {
+    color: var(--text-highlight) !important;
   }
 }

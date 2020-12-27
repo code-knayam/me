@@ -39,3 +39,7 @@ body {
   --font-size-04: 4rem;
   --font-size-10: 10rem;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

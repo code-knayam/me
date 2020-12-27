@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     p.draw = () => {
       p.background(0);
-      speed = p.map(p.mouseX, 2, p.width, 1, 15);
+      speed = p.map(p.mouseX, 2, p.width, 1, 40);
       p.translate(p.width / 2, p.height / 2);
       for (var i = 0; i < stars.length; i++) {
         stars[i].update();
