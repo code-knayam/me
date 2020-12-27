@@ -1,15 +1,19 @@
 .container {
   display: flex;
   flex-direction: column;
+  padding: 0 var(--spacing-04);
+  margin: 0 auto;
 
   .title-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto 0;
+    min-height: 100vh;
+
     .title {
-      color: #fff;
-      font-size: 160px;
+      color: var(--text-color);
+      font-size: var(--font-size-10);
 
       .highlight {
         color: var(--text-highlight);
@@ -19,6 +23,40 @@
     .icon {
       margin-right: var(--spacing-07);
       color: var(--text-highlight);
+    }
+  }
+
+  section {
+    color: var(--text-color);
+    max-width: 70%;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    .sub-title {
+      font-size: var(--font-size-04);
+      margin-bottom: var(--spacing-07);
+      font-weight: normal;
+      .highlight {
+        color: var(--text-highlight);
+      }
+    }
+    .heading {
+      font-size: var(--font-size-02);
+      margin: var(--spacing-07) 0;
+      opacity: 0.9;
+      line-height: 2;
+      font-weight: normal;
+    }
+    .content {
+      line-height: 2;
+      margin: var(--spacing-06) 0;
+      font-size: var(--font-size-01-4);
+      opacity: 0.8;
+      font-weight: normal;
+      .link {
+        color: var(--link-color);
+        text-decoration: none;
+      }
     }
   }
 }
