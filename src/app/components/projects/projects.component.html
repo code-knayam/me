@@ -1,0 +1,26 @@
+<app-nav></app-nav>
+<main class="container">
+  <div class="title-container">
+    <span class="icon">
+      <svg class="bi" width="100" height="100" fill="currentColor">
+        <use xlink:href="assets/bootstrap-icons.svg#laptop" />
+      </svg>
+    </span>
+    <h1 class="title" [innerHtml]="data.title | highlighter">
+    </h1>
+  </div>
+  <section>
+    <h2 class="sub-title" [innerHtml]="data.subTitle | highlighter">
+    </h2>
+
+    <div class="work" *ngFor="let work of data.works">
+      <h4 class="heading">{{ work.heading }}</h4>
+      <p class="content" *ngFor="let position of work.positions">
+        <span class="highlight">
+          {{ position.title }}
+        </span>
+        ({{ position.duration }})
+      </p>
+    </div>
+  </section>
+</main>

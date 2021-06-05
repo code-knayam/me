@@ -1,0 +1,34 @@
+<app-nav></app-nav>
+<main class="container" *ngIf="data">
+  <div class="title-container">
+
+    <span class="icon">
+      <svg class="bi" width="100" height="100" fill="currentColor">
+        <use xlink:href="assets/bootstrap-icons.svg#braces" />
+      </svg>
+    </span>
+    <h1 class="title" [innerHtml]="data.title | highlighter">
+    </h1>
+  </div>
+  <section>
+    <h2 class="sub-title"  [innerHtml]="data.subTitle | highlighter">
+    </h2>
+
+    <h4 class="heading">
+      {{data.heading}}
+    </h4>
+
+    <p class="content">
+      <ng-container *ngFor="let social of data.social">
+        <a class="link" [href]="social.link" target="_blank">
+          <span class="icon">
+            <svg class="bi" width="40" height="40" fill="currentColor">
+              <use [attr.xlink:href]="social.icon" />
+            </svg>
+          </span>
+        </a>
+      </ng-container>
+    </p>
+
+  </section>
+</main>

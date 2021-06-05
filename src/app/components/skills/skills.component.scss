@@ -1,0 +1,23 @@
+div {
+  display: flex;
+  flex-direction: column;
+  .sub-title {
+    color: var(--highlight);
+    flex: 1 0 0;
+  }
+  p {
+    flex: 5 0 0;
+    font-size: 80px;
+
+    .cursor {
+      color: var(--text-highlight);
+      padding-left: 4px;
+      animation: blink-animation 0.5s steps(2, start) infinite;
+    }
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+  }
+}
