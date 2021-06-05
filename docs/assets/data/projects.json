@@ -1,0 +1,21 @@
+{
+  "data": {
+    "title": "",
+    "subTitle": "Personal Projects",
+    "works" : [
+      {
+        "heading": "Coditas Technologies Pvt Ltd",
+        "positions": [
+          {
+            "title": "Tech Lead",
+            "duration": "Nov, 2020 - Present"
+          },
+          {
+            "title": "Software Developer",
+            "duration": "Aug, 2018 - Oct, 2020"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "data": {
+    "title": "Let's Chat",
+    "subTitle": "Hey there",
+    "heading": "Always looking forward to some new opportunities and getting to know new people.",
+    "social": [
+      {
+        "icon": "assets/bootstrap-icons.svg#github",
+        "link": "https://github.com/code-knayam/"
+      },
+      {
+        "icon": "assets/bootstrap-icons.svg#envelope-fill",
+        "link": "mailto:mayankjain1394@gmail.com"
+      },
+      {
+        "icon": "assets/bootstrap-icons.svg#linkedin",
+        "link": "https://www.linkedin.com/in/mayankjain1394/"
+      }
+    ]
+  }
+}

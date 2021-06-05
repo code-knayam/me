@@ -1,0 +1,30 @@
+{
+  "data": {
+    "title": "My Works",
+    "subTitle": "Work Experience",
+    "works" : [
+      {
+        "heading": "Coditas Technologies Pvt Ltd",
+        "positions": [
+          {
+            "title": "Tech Lead",
+            "duration": "Nov, 2020 - Present"
+          },
+          {
+            "title": "Software Developer",
+            "duration": "Aug, 2018 - Oct, 2020"
+          }
+        ]
+      },
+      {
+        "heading": "Tech Mahindra",
+        "positions": [
+          {
+            "title": "Jr. Software Engineer",
+            "duration": "Aug, 2016 - Aug, 2018"
+          }
+        ]
+      }
+    ]
+  }
+}
