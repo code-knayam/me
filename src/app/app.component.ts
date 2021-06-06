@@ -6,14 +6,12 @@ import { slideInAnimation } from './shared/animation';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-   animations: [
-    slideInAnimation
-  ]
+  animations: [slideInAnimation],
 })
 export class AppComponent {
-  title = 'me';
-
   prepareRoute(outlet: RouterOutlet) {
-  return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
-}
+    return (
+      outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation
+    );
+  }
 }

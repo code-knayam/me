@@ -77,6 +77,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.p5.remove();
     document.getElementById('home')?.remove();
   }
 }
