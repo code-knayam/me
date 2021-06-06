@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { IProjects } from 'src/app/shared/interfaces/project.interface';
 import { DataService } from '../../services/data.service';
 import { IWorks } from '../../shared/interfaces/work.interface';
 
@@ -10,14 +11,17 @@ import { IWorks } from '../../shared/interfaces/work.interface';
 })
 export class WorkComponent implements OnInit {
 
-  data: IWorks;
-
+  worksData: IWorks;
+  projectsData: IProjects;
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
     this.dataService.getWorks().subscribe(res => {
-      this.data = res.data;
-    })
+      this.worksData = res.data;
+    });
+    this.dataService.getProjects().subscribe(res => {
+      this.projectsData = res.data;
+    });
   }
 
 }

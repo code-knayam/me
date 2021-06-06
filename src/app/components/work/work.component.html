@@ -1,22 +1,22 @@
 <app-nav></app-nav>
-<main class="container" *ngIf="data">
+<main class="container" *ngIf="worksData">
   <div class="title-container">
     <span class="icon">
       <svg class="bi" width="100" height="100" fill="currentColor">
         <use xlink:href="assets/bootstrap-icons.svg#laptop" />
       </svg>
     </span>
-    <h1 class="title" [innerHtml]="data.title | highlighter">
+    <h1 class="title" [innerHtml]="worksData.title | highlighter">
     </h1>
   </div>
   <section>
     <app-skills></app-skills>
   </section>
   <section>
-    <h2 class="sub-title" [innerHtml]="data.subTitle | highlighter">
+    <h2 class="sub-title" [innerHtml]="worksData.subTitle | highlighter">
     </h2>
 
-    <div class="work" *ngFor="let work of data.works">
+    <div class="work" *ngFor="let work of worksData.works">
       <h4 class="heading">{{ work.heading }}</h4>
       <p class="content" *ngFor="let position of work.positions">
         <span class="highlight">
@@ -27,7 +27,7 @@
     </div>
   </section>
   <section>
-    <h2 class="sub-title" [innerHtml]="data.subTitle | highlighter"></h2>
-    <app-projects></app-projects>
+    <h2 class="sub-title" [innerHtml]="projectsData.subTitle | highlighter"></h2>
+    <app-projects [data]="projectsData"></app-projects>
   </section>
 </main>
