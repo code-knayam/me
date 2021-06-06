@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_ENDPOINTS: {
+    WORKS: '/assets/data/works.json',
+    SKILLS: '/assets/data/skills.json',
+    CONTACT: '/assets/data/contact.json',
+    ABOUT: '/assets/data/about.json',
+  },
 };
 
 /*

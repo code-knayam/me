@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { API_ENDPOINTS } from '../shared/constants';
+import { environment } from './../../environments/environment';
+
 import { IAboutResponse } from '../shared/interfaces/about-response.interface';
 import { IContactResponse } from '../shared/interfaces/contact-response.interface';
 import { ISkillResponse } from '../shared/interfaces/skill-response.interface';
@@ -12,21 +13,25 @@ import { IWorkResponse } from '../shared/interfaces/work-response.interface';
 })
 export class DataService {
 
-  constructor(private http: HttpClient) { }
+  API_ENDPOINTS;
+
+  constructor(private http: HttpClient) {
+    this.API_ENDPOINTS = environment.API_ENDPOINTS;
+  }
 
   getWorks(): Observable<IWorkResponse> {
-    return this.http.get<IWorkResponse>(API_ENDPOINTS.WORKS);
+    return this.http.get<IWorkResponse>(this.API_ENDPOINTS.WORKS);
   }
 
   getSkills(): Observable<ISkillResponse> {
-    return this.http.get<ISkillResponse>(API_ENDPOINTS.SKILLS);
+    return this.http.get<ISkillResponse>(this.API_ENDPOINTS.SKILLS);
   }
 
   getContact(): Observable<IContactResponse> {
-    return this.http.get<IContactResponse>(API_ENDPOINTS.CONTACT);
+    return this.http.get<IContactResponse>(this.API_ENDPOINTS.CONTACT);
   }
 
   getAbout(): Observable<IAboutResponse> {
-    return this.http.get<IAboutResponse>(API_ENDPOINTS.ABOUT);
+    return this.http.get<IAboutResponse>(this.API_ENDPOINTS.ABOUT);
   }
 }
