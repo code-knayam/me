@@ -5,16 +5,16 @@
     "heading": "Hi, I'm Mayank. I am a full stack developer based out of Pune, India having over 4+ years of experience in building web apps.",
     "content": [
       {
-        "text": "In my small experince of 4 years, I have worked mostly in travel domains building over 4 different travel products in Angular 2+ versions. Apart from this I have also experience in React JS, Vue JS, Spring boot and have build over 3 different enterprise level apps."
+        "text": "In my small experince of 4 years, I have worked mostly in travel domains building over 4 different travel products in Angular 2+ versions. Apart from this I have also experience in React JS, Vue JS, Spring boot, Node Js building various enterprise level apps."
       },
       {
-        "text": "My love for work and to explore different technologies help me to keep on going project to project and try on different roles and challenges. I'm a fast learner and quickly adapt to new skills and juggle different projects and roles with relative ease."
+        "text": "My love for exploring different technologies help me to keep on going from project to project and try on different roles and challenges. I'm a fast learner and quickly adapt to new skills and can easily juggle different projects and roles with relative ease."
       },
       {
-        "text": "Get a detailed info about me in my resume.",
+        "text": "",
         "links": [
           {
-            "href": "www.google.com",
+            "href": "assets/data/resume.pdf",
             "icon": "assets/bootstrap-icons.svg#file-earmark-person"
           }
         ]
