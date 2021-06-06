@@ -2,19 +2,86 @@
   "data": {
     "title": "",
     "subTitle": "Personal Projects",
-    "works" : [
+    "projects" : [
       {
-        "heading": "Coditas Technologies Pvt Ltd",
-        "positions": [
-          {
-            "title": "Tech Lead",
-            "duration": "Nov, 2020 - Present"
-          },
-          {
-            "title": "Software Developer",
-            "duration": "Aug, 2018 - Oct, 2020"
-          }
-        ]
+        "heading": "Github-scrapper",
+        "subHeading": "Scrapping Github for username",
+        "repoLink": "https://github.com/code-knayam/Github-scrapper",
+        "description": "Automate scrapping entire github with Puppeteer. Search for users and save the username and email from search results into a file.",
+        "techStack": ["javascript"],
+        "imageUrl": ""
+      },
+      {
+        "heading": "angular-todo",
+        "subHeading": "ToDo SPA App",
+        "repoLink": "https://github.com/code-knayam/angular-todo",
+        "description": "Developed SPA using Angular 6 to built a ToDo app.Users can login with their Google account to add their pending tasks and categorise them into various lists. Made use of Google Firebase for hosting purposes. Also used Google cloud functions to manage the server side code on Node JS. Made use of Google Firestore as database to store user info and details.",
+        "techStack": ["Angular 6", "firebase"],
+        "imageUrl": ""
+      },
+      {
+        "heading": "github-search",
+        "subHeading": "Github User Search/Details app",
+        "repoLink": "https://github.com/code-knayam/github-search",
+        "description": "Github user search app developed using Angular JS. Made use of Github Rest API to fetch search results and display user and repo details in various charts and diagrams. App deployed using firebase.",
+        "techStack": ["Angular JS", "firebase", "Github API"],
+        "imageUrl": ""
+      },
+      {
+        "heading": "crypto-bot",
+        "subHeading": "Node JS scheduler app",
+        "repoLink": "https://github.com/code-knayam/crypto-bot",
+        "description": "Node JS scheduler app to check price of a cryptocoin and mail the status of BUY/SELL to user if the price crosses the provided thresholds.",
+        "techStack": ["Node JS", "firebase"],
+        "imageUrl": ""
+      },
+      {
+        "heading": "web-crawler",
+        "subHeading": "Node js web crawler",
+        "repoLink": "https://github.com/code-knayam/web-crawler",
+        "description": "Node JS web crawler to crawl webpages from a starting point and outputs it results in a file",
+        "techStack": ["Node JS"],
+        "imageUrl": ""
+      },
+      {
+        "heading": "wassup",
+        "subHeading": "Whatsapp clone",
+        "repoLink": "https://github.com/code-knayam/wassup",
+        "description": "Whatsapp clone created using angular 10. Made use of google firebase's realtime database to send / receive messages",
+        "techStack": ["Angular 10", "firebase"],
+        "imageUrl": ""
+      },
+      {
+        "heading": "FaceDetection",
+        "subHeading": "Face Expression Detection webapp",
+        "repoLink": "https://github.com/code-knayam/FaceDetection",
+        "description": "Javascript app which detects expressions on face",
+        "techStack": ["javascript"],
+        "imageUrl": ""
+      },
+      {
+        "heading": "birthdayWishApp",
+        "subHeading": "Facebook Birthday Wish App",
+        "repoLink": "https://github.com/code-knayam/birthdayWishApp",
+        "description": "Replying to all the posts on a birthday can be a tedious task. This is an automated program on pyhton to reply to those messages either all at once or one by one.",
+        "techStack": ["python"],
+        "imageUrl": ""
+      } ,
+      {
+        "heading": "Chatter",
+        "subHeading": "NodeJs Chat app",
+        "repoLink": "https://github.com/code-knayam/Chatter",
+        "description": "Created this node js chat app which uses Redis server to store, send and receive all the messages.",
+        "techStack": ["Node JS", "Redis"],
+        "imageUrl": ""
+      } ,
+      {
+        "heading": "Bookog",
+        "subHeading": "Book Logger webapp",
+        "repoLink": "https://github.com/code-knayam/Bookog",
+        "description": "Bookog is an online SPA tool to keep a track of the books that a user reads. The user can login by providing the basic info and can start logging the books.",
+        "techStack": ["Angular 4", "firebase"],
+        "imageUrl": ""
       }
     ]
   }
