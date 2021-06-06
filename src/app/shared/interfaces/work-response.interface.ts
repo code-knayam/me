@@ -1,5 +1,5 @@
-import { IWork } from "./work.interface";
+import { IWorks } from "./work.interface";
 
 export interface IWorkResponse {
-  data: IWork
+  data: IWorks
 }

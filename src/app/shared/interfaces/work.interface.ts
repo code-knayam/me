@@ -3,13 +3,13 @@ interface IPosition {
   duration: string;
 }
 
-interface IWorks {
+interface IWork {
   heading: string;
   positions: IPosition[];
 }
 
-export interface IWork {
+export interface IWorks {
   title: string;
   subTitle: string;
-  works: IWorks[];
+  works: IWork[];
 }

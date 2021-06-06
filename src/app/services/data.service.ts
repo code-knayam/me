@@ -7,7 +7,7 @@ import { IAboutResponse } from '../shared/interfaces/about-response.interface';
 import { IContactResponse } from '../shared/interfaces/contact-response.interface';
 import { ISkillResponse } from '../shared/interfaces/skill-response.interface';
 import { IWorkResponse } from '../shared/interfaces/work-response.interface';
-
+import { IProjectsResponse } from '../shared/interfaces/project-response.interface';
 @Injectable({
   providedIn: 'root'
 })
@@ -33,5 +33,9 @@ export class DataService {
 
   getAbout(): Observable<IAboutResponse> {
     return this.http.get<IAboutResponse>(this.API_ENDPOINTS.ABOUT);
+  }
+
+  getProjects(): Observable<IProjectsResponse> {
+    return this.http.get<IProjectsResponse>(this.API_ENDPOINTS.PROJECTS);
   }
 }

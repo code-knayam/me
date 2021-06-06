@@ -9,6 +9,7 @@ export const environment = {
     SKILLS: '/assets/data/skills.json',
     CONTACT: '/assets/data/contact.json',
     ABOUT: '/assets/data/about.json',
+    PROJECTS: '/assets/data/projects.json',
   },
 };
 

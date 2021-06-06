@@ -33,7 +33,9 @@ body {
   --spacing-07: 32px;
 
   --font-size-01: 1rem;
+  --font-size-01-2: 1.2rem;
   --font-size-01-4: 1.4rem;
+  --font-size-01-6: 1.6rem;
   --font-size-02: 2rem;
   --font-size-03: 3rem;
   --font-size-04: 4rem;
@@ -42,4 +44,8 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
 }

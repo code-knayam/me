@@ -5,5 +5,6 @@ export const environment = {
     SKILLS: '/me/assets/data/skills.json',
     CONTACT: '/me/assets/data/contact.json',
     ABOUT: '/me/assets/data/about.json',
+    PROJECTS: '/me/assets/data/projects.json',
   },
 };

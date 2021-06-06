@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { DataService } from '../../services/data.service';
-import { IWork } from '../../shared/interfaces/work.interface';
+import { IWorks } from '../../shared/interfaces/work.interface';
 
 @Component({
   selector: 'app-work',
@@ -10,7 +10,7 @@ import { IWork } from '../../shared/interfaces/work.interface';
 })
 export class WorkComponent implements OnInit {
 
-  data: IWork;
+  data: IWorks;
 
   constructor(private dataService: DataService) { }
 

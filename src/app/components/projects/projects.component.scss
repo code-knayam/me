@@ -1,0 +1,38 @@
+.sub-title {
+  font-size: var(--font-size-04);
+  margin-bottom: var(--spacing-07);
+  font-weight: normal;
+  text-align: center;
+}
+.project {
+  .heading {
+    font-size: var(--font-size-02);
+    margin: var(--spacing-07) 0 var(--spacing-02);
+    opacity: 0.9;
+    line-height: 2;
+    font-weight: normal;
+
+    .icon {
+      margin-right: var(--spacing-03);
+      color: var(--text-highlight);
+    }
+  }
+  .sub-heading {
+    font-size: var(--font-size-01-2);
+    margin: var(--spacing-02) 0 var(--spacing-02);
+    opacity: 0.9;
+    line-height: 2;
+    font-weight: normal;
+  }
+  .content {
+    line-height: 2;
+    margin: var(--spacing-02) 0;
+    font-size: var(--font-size-01);
+    opacity: 0.8;
+    font-weight: normal;
+    .link {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+  }
+}
