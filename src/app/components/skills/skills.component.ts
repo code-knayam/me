@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { DataService } from 'src/app/services/data.service';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent implements OnInit, OnDestroy {
 
   keywords: string[];
   index = 0;
@@ -14,6 +14,10 @@ export class SkillsComponent implements OnInit {
   nextWord = "";
   skillText = "";
   completed = false;
+
+  skillTextTimer;
+  animateTimer;
+
 
   constructor(private dataService: DataService) { }
 
@@ -40,7 +44,7 @@ export class SkillsComponent implements OnInit {
       this.skillTextIndex++;
     } else if (this.skillText.length == this.nextWord.length && !this.completed) {
       this.completed = true;
-      window.setTimeout(
+      this.skillTextTimer = window.setTimeout(
         () => {
           this.skillText = this.skillText.substring(0, this.skillText.length - 1);
         }, 300);
@@ -48,7 +52,12 @@ export class SkillsComponent implements OnInit {
       this.skillText = this.skillText.substring(0, this.skillText.length - 1);
     }
     document.getElementById('skills') ? document.getElementById('skills').innerText = this.skillText : false;
-    window.setTimeout(this.animateSkills.bind(this), 150);
+    this.animateTimer = window.setTimeout(this.animateSkills.bind(this), 150);
+  }
+
+  ngOnDestroy() {
+    clearTimeout(this.animateTimer);
+    clearTimeout(this.skillTextTimer);
   }
 
 }
