@@ -12,6 +12,9 @@
     line-height: 2;
     font-weight: normal;
 
+    a {
+      display: flex;
+    }
     .icon {
       margin-right: var(--spacing-03);
       color: var(--text-highlight);
