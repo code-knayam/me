@@ -23,7 +23,7 @@
     .text {
       text-align: left;
       color: var(--text-color);
-      font-size: var(--font-size-10);
+      font-size: var(--font-size-landing);
       margin: 0;
       transition: 0.6s ease;
       cursor: pointer;
@@ -48,11 +48,65 @@
       color: var(--text-highlight);
     }
 
-    img {
+    .profile-img {
       width: 400px;
       height: 400px;
       border-radius: 50%;
-      opacity: 0.99;
+      opacity: 0.8;
+    }
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: auto;
+    max-height: 100vh;
+    .content {
+      flex-direction: column-reverse;
+
+      .text:hover {
+        padding-left: unset;
+        .label {
+          display: unset;
+        }
+        .label-2 {
+          display: none;
+        }
+      }
+      .profile-img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: var(--spacing-07);
+        opacity: 0.6;
+      }
+    }
+
+    .mobile-nav {
+      position: fixed;
+      bottom: 0;
+      z-index: 3;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: var(--spacing-05) 0;
+      background-color: rgba(var(--text-highlight-rgb), 0.6);
+
+      .link {
+        flex: 1;
+        text-align: center;
+        font-size: var(--font-size-02);
+        opacity: 0.8;
+        &:not(:last-child) {
+          border-right: 2px solid var(--bg);
+        }
+      }
     }
   }
 }

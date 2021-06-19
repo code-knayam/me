@@ -12,6 +12,11 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +25,7 @@ body {
 :root {
   --bg: #000000;
   --text-highlight: #ff0000;
+  --text-highlight-rgb: 255, 0, 0;
   --text-color: #fff;
   --link-color: #ff0000;
 
@@ -40,12 +46,30 @@ body {
   --font-size-03: 3rem;
   --font-size-04: 4rem;
   --font-size-10: 10rem;
+  --font-size-landing: 10rem;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
+
 a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+  :root {
+    --font-size-01: 2rem;
+    --font-size-01-2: 2rem;
+    --font-size-01-4: 2rem;
+    --font-size-01-6: 2rem;
+    --font-size-02: 2rem;
+    --font-size-03: 3rem;
+    --font-size-04: 4rem;
+    --font-size-10: 6rem;
+  }
 }

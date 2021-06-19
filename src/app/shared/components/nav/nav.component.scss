@@ -13,3 +13,9 @@ nav {
     }
   }
 }
+@media (max-width: 800px) {
+  nav {
+    top: 20px;
+    left: 20px;
+  }
+}
