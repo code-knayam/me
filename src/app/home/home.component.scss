@@ -3,6 +3,39 @@
   position: fixed;
   z-index: 1;
 }
+.slide-animation-helper {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+  color: var(--text-color);
+  z-index: 9;
+  opacity: 0.9;
+  animation: slide 1s 1s 5, hide 0.1s 6s forwards;
+}
+
+@keyframes slide {
+  0% {
+    left: 48%;
+  }
+  50% {
+    left: 52%;
+  }
+  100% {
+    left: 48%;
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    top: -10%;
+  }
+}
+
 .container {
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
